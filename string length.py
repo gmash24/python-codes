@@ -32,3 +32,18 @@ print (b)
 #4 (exclusive):
 m="Python" [2: 4 ]
 print (m)
+
+#problems that can arise when copying mutable objects as shown in the example below
+
+colors1= ['red','green']
+color2=colors1
+color2= ['yellow','orange']
+print (colors1)
+# the answer is re green because the value a new memory area is assigned to the color2 when a new list is assigned to the variable.
+
+#what if we change an element in the variable and reain the other?
+color1 =['purple','pink']
+color2=color1
+color2[1]='brown'
+print(color1)
+# THIS CHANGS TO purple, brown
